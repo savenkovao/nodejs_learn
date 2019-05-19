@@ -1,3 +1,5 @@
+// https://learn.javascript.ru/screencast/nodejs#nodejs-npm-intro
+
 var User = require('./user');
 var db = require('./db');
 db.connect();
@@ -15,5 +17,9 @@ if(module.parent) {
 } else {
   run();
 }
+
+
+// var db = require('db');
+// NODE_PATH=. node server.js
 
 

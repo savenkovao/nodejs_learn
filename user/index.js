@@ -1,4 +1,5 @@
 var db = require('../db');
+var log = require('../logger')(module); //модуль фабрика
 
 
 // User module
@@ -9,7 +10,7 @@ function User(name) {
 db.connect();
 
 User.prototype.hello = function (who) {
-  console.log(db.getPhrase('hello') + ', ' + who.name);
+  log(db.getPhrase('hello') + ', ' + who.name);
 };
 
 // global.User = User;

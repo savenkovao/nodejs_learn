@@ -1,0 +1,9 @@
+{
+  "name": "modulesapp",
+  "version": "1.0.0",
+  "scripts" : {
+    "start" : "node app.js",
+    "demon" : "nodemon app.js",
+    "dev" : "node app.js Tom 26"
+  }
+}
